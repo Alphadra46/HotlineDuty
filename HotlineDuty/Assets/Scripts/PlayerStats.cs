@@ -23,8 +23,15 @@ public class PlayerStats : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().sprite = playerSpriteWithoutGun;
         }
-        
-        actualWeapon = GetComponent<PickUpScript>().weaponToInteract.GetComponent<SpriteRenderer>().sprite;
+
+        if (GetComponent<PickUpScript>().weaponToInteract != null)
+        {
+            actualWeapon = GetComponent<PickUpScript>().weaponToInteract.GetComponent<SpriteRenderer>().sprite;
+        }
+        else
+        {
+            actualWeapon = null;
+        }
         
         if (life <= 0)
         {

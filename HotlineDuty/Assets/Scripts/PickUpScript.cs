@@ -18,7 +18,7 @@ public class PickUpScript : MonoBehaviour
         shootScript = GetComponent<Shoot>();
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (!other.gameObject.CompareTag("Weapon"))
             return;
@@ -26,7 +26,7 @@ public class PickUpScript : MonoBehaviour
         weaponToInteract = other.gameObject;
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (!other.gameObject.CompareTag("Weapon"))
             return;

@@ -21,7 +21,7 @@ public class AmmoManager : MonoBehaviour
     private void Start()
     {
         shootScript = FindObjectOfType<Shoot>();
-        weaponTip = transform.Find("WeaponTip").transform;
+        weaponTip = GameObject.Find("WeaponTip").transform;
     }
 
     private void Update()

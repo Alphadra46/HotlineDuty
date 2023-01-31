@@ -25,7 +25,7 @@ public class Shoot : MonoBehaviour
     {
         ShootWithWeapon();
     }
-
+    
     private void ShootWithWeapon()
     {
         if (!isAWeaponEquipped)
