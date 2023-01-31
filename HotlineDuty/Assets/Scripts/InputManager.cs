@@ -24,6 +24,8 @@ public class InputManager : MonoBehaviour
 
     [Header("Game")] 
     [HideInInspector] public InputAction move;
+    [HideInInspector] public InputAction pickUp_drop;
+    [HideInInspector] public InputAction shoot;
 
     void Awake()
     {
@@ -101,6 +103,8 @@ public class InputManager : MonoBehaviour
     public void InitInGameInputs()
     {
         move = playerinputActions.Player.Movement;
+        pickUp_drop = playerinputActions.Player.PickUp_Drop;
+        shoot = playerinputActions.Player.Shoot;
     }
     
     /// <summary>
@@ -109,6 +113,8 @@ public class InputManager : MonoBehaviour
     public void OnEnableInGameInputs()
     {
         move.Enable();
+        pickUp_drop.Enable();
+        shoot.Enable();
     }
     
     /// <summary>
@@ -117,5 +123,7 @@ public class InputManager : MonoBehaviour
     public void OnDisableInGameInputs()
     {
         move.Disable();
+        pickUp_drop.Disable();
+        shoot.Disable();
     }
 }
