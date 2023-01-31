@@ -1,0 +1,410 @@
+fileFormatVersion: 2
+guid: abb5486abd6e35e47a68dacbd2001695
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprBottleExplodeFlame_strip9_14
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 4
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a9924c9cae1694ca050810c7af070a
+      internalID: -1124774695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBottleExplodeFlame_strip9_17
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 4
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf08efb0178b6541aedf6a42d48495d
+      internalID: -1147239144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBottleExplodeFlame_strip9_20
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 8
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db17ba434e2cac46b5cb0a2de64eda6
+      internalID: 977639605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBottleExplodeFlame_strip9_23
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 20
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f09cc9eacd287409096ab35bac2377
+      internalID: 447471334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBottleExplodeFlame_strip9_33
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 14
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3529af3a1d9a85040a2ca2cee942f821
+      internalID: 2114704296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBottleExplodeFlame_strip9_37
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 6
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba376d134d6cb542ad5f65956f3e6cf
+      internalID: 1116710969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBottleExplodeFlame_strip9_42
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 28
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003be5b5211702643922e4590d154f25
+      internalID: -167609483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBottleExplodeFlame_strip9_45
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 8
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5947c5b9a3dd04eb2cab5bc55a055c
+      internalID: 732276902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBottleExplodeFlame_strip9_46
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 4
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee4619584b1adf45b0d2bfe347563e8
+      internalID: 218648946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBottleExplodeFlame_strip9_57
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 5
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5993d5efee9914fbe228811605870f
+      internalID: -324007981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ecbe95b6bcc2ae040b321b5c5e7fb910
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sprBottleExplodeFlame_strip9_37: 1116710969
+      sprBottleExplodeFlame_strip9_8: -1090698695
+      sprBottleExplodeFlame_strip9_15: -1923202207
+      sprBottleExplodeFlame_strip9_1: 1142323553
+      sprBottleExplodeFlame_strip9_7: 1493044719
+      sprBottleExplodeFlame_strip9_56: 1119889967
+      sprBottleExplodeFlame_strip9_52: 996707427
+      sprBottleExplodeFlame_strip9_63: 1001733947
+      sprBottleExplodeFlame_strip9_19: 1669044726
+      sprBottleExplodeFlame_strip9_34: 410793479
+      sprBottleExplodeFlame_strip9_22: -900573570
+      sprBottleExplodeFlame_strip9_28: 635393370
+      sprBottleExplodeFlame_strip9_27: -1863908108
+      sprBottleExplodeFlame_strip9_45: 732276902
+      sprBottleExplodeFlame_strip9_54: 606407875
+      sprBottleExplodeFlame_strip9_61: 1580253499
+      sprBottleExplodeFlame_strip9_9: 2133921748
+      sprBottleExplodeFlame_strip9_26: -209200546
+      sprBottleExplodeFlame_strip9_5: 1799356656
+      sprBottleExplodeFlame_strip9_10: -554488295
+      sprBottleExplodeFlame_strip9_11: 264413922
+      sprBottleExplodeFlame_strip9_41: 988001231
+      sprBottleExplodeFlame_strip9_17: -1147239144
+      sprBottleExplodeFlame_strip9_6: -541097098
+      sprBottleExplodeFlame_strip9_3: 1978723777
+      sprBottleExplodeFlame_strip9_42: -167609483
+      sprBottleExplodeFlame_strip9_50: 1895160615
+      sprBottleExplodeFlame_strip9_32: -2012842457
+      sprBottleExplodeFlame_strip9_46: 218648946
+      sprBottleExplodeFlame_strip9_38: 1301390382
+      sprBottleExplodeFlame_strip9_18: 1428378229
+      sprBottleExplodeFlame_strip9_57: -324007981
+      sprBottleExplodeFlame_strip9_16: -736271566
+      sprBottleExplodeFlame_strip9_53: -375749565
+      sprBottleExplodeFlame_strip9_29: -851069764
+      sprBottleExplodeFlame_strip9_31: -498018470
+      sprBottleExplodeFlame_strip9_48: -844373439
+      sprBottleExplodeFlame_strip9_24: 984459062
+      sprBottleExplodeFlame_strip9_12: -345582831
+      sprBottleExplodeFlame_strip9_36: -1053274259
+      sprBottleExplodeFlame_strip9_40: -2012980411
+      sprBottleExplodeFlame_strip9_44: -386756511
+      sprBottleExplodeFlame_strip9_49: -105249441
+      sprBottleExplodeFlame_strip9_55: 1384660694
+      sprBottleExplodeFlame_strip9_62: 1498793905
+      sprBottleExplodeFlame_strip9_13: -1978915863
+      sprBottleExplodeFlame_strip9_20: 977639605
+      sprBottleExplodeFlame_strip9_23: 447471334
+      sprBottleExplodeFlame_strip9_0: -691464605
+      sprBottleExplodeFlame_strip9_21: -1166431442
+      sprBottleExplodeFlame_strip9_43: 1617442937
+      sprBottleExplodeFlame_strip9_47: -418892489
+      sprBottleExplodeFlame_strip9_51: 868165545
+      sprBottleExplodeFlame_strip9_25: -1620156466
+      sprBottleExplodeFlame_strip9_4: 4881612
+      sprBottleExplodeFlame_strip9_14: -1124774695
+      sprBottleExplodeFlame_strip9_30: 970932362
+      sprBottleExplodeFlame_strip9_33: 2114704296
+      sprBottleExplodeFlame_strip9_60: 1421774457
+      sprBottleExplodeFlame_strip9_64: 400900457
+      sprBottleExplodeFlame_strip9_35: -256040803
+      sprBottleExplodeFlame_strip9_58: -79435534
+      sprBottleExplodeFlame_strip9_39: -1197907764
+      sprBottleExplodeFlame_strip9_59: -762917747
+      sprBottleExplodeFlame_strip9_2: -1441928992
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
