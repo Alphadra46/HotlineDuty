@@ -20,4 +20,21 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!collision.gameObject.CompareTag("Weapon") && !collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!other.gameObject.CompareTag("Weapon") && !other.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
+    
 }
