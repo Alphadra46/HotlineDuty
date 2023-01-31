@@ -1228,6 +1228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponSlot: {fileID: 1322615826}
+  weaponToInteract: {fileID: 0}
 --- !u!114 &1641509308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1254,6 +1255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1790096591}
   - component: {fileID: 1790096590}
+  - component: {fileID: 1790096592}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Weapon
@@ -1292,6 +1294,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1790096592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790096589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a90c2771cba454d91c3bc82f47d110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxAmmo: 200
+  actualAmmo: 10
+  rateOfFire: 0.5
+  isAutomatic: 1
+  damagePerBullet: 5
+  bulletLifeTime: 2
+  bulletPrefab: {fileID: 2600427693297900544, guid: b1da7258d6ad23c4aae4c47b99744691,
+    type: 3}
+  shootForce: 20
 --- !u!1 &2013793646
 GameObject:
   m_ObjectHideFlags: 0
