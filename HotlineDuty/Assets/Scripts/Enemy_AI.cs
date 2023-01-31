@@ -12,8 +12,10 @@ public class Enemy_AI : MonoBehaviour
 
     public float AttackStart = 0f;
 
-    public float AttackCooldown = 2.5f;
-    // Start is called before the first frame update
+    public float AttackCooldown = 1.25f;
+    
+    public PlayerStats playerStats;
+    
     void Start()
     {
         var Player = GameObject.Find("Player");
@@ -21,7 +23,7 @@ public class Enemy_AI : MonoBehaviour
         SelfAi.target = Player.transform;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
@@ -48,8 +50,14 @@ public class Enemy_AI : MonoBehaviour
             }
         }
     }
-
+    
+    
     private void Attack()
+    {
+        playerStats.life -= AttackDamage;
+    }
+
+    private void Death()
     {
         
     }

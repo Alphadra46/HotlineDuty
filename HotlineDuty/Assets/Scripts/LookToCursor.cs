@@ -7,10 +7,10 @@ public class LookToCursor : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private Camera camera;
 
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     void Awake()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

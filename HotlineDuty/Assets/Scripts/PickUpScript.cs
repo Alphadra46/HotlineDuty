@@ -10,7 +10,7 @@ public class PickUpScript : MonoBehaviour
     [SerializeField] private Transform weaponSlot;
     private Shoot shootScript;
 
-    private GameObject weaponToInteract;
+    [HideInInspector] public GameObject weaponToInteract;
 
     private void Start()
     {
