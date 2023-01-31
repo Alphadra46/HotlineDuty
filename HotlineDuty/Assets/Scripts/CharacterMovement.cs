@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Animations;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -15,11 +16,13 @@ public class CharacterMovement : MonoBehaviour
     
     //-----Privates Variables-----//
     private Vector2 movement;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
+    private Animator anim;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
     
     
@@ -30,12 +33,21 @@ public class CharacterMovement : MonoBehaviour
 
     private void Movement()
     {
-        movement = InputManager.instance.move.ReadValue<Vector2>(); //Reading the value of the input to get the direction
         
+        movement = InputManager.instance.move.ReadValue<Vector2>(); //Reading the value of the input to get the direction
+
         if (movement == Vector2.zero)
+        {
+            anim.SetBool("isWalking", false);
             rb.velocity = Vector3.zero;
+        }
         else
+        {
+            anim.SetBool("isWalking", true);
             rb.velocity = movement.normalized * speed;
+        }
+            
+            
     }
     
 }
