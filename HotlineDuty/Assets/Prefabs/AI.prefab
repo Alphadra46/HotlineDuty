@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9110545983089652892}
   m_Layer: 0
   m_Name: AI
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -269,6 +269,7 @@ MonoBehaviour:
   AttackDamage: 0
   AttackStart: 0
   AttackCooldown: 2.5
+  playerStats: {fileID: 0}
 --- !u!60 &9110545983815460162
 PolygonCollider2D:
   m_ObjectHideFlags: 0

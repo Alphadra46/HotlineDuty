@@ -123,33 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &61043599 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3789883300828410908, guid: 30ab81685dc62ff4384f9d4486bb643e,
-    type: 3}
-  m_PrefabInstance: {fileID: 303217025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &61043600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61043599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82a90c2771cba454d91c3bc82f47d110, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxAmmo: 200
-  actualAmmo: 15
-  rateOfFire: 0.5
-  isAutomatic: 1
-  damagePerBullet: 5
-  bulletLifeTime: 2
-  bulletPrefab: {fileID: 2600427693297900544, guid: b1da7258d6ad23c4aae4c47b99744691,
-    type: 3}
-  shootForce: 20
 --- !u!1 &153505983
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,11 +355,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pistol
-      objectReference: {fileID: 0}
-    - target: {fileID: 3789883300828410908, guid: 30ab81685dc62ff4384f9d4486bb643e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30ab81685dc62ff4384f9d4486bb643e, type: 3}

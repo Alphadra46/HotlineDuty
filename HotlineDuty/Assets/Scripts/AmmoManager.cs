@@ -44,7 +44,7 @@ public class AmmoManager : MonoBehaviour
         }
         
         GameObject bullet = Instantiate(bulletPrefab, weaponTip.position,weaponTip.rotation);
-        bullet.GetComponent<Rigidbody>().AddForce(weaponTip.right * shootForce,ForceMode.Impulse);
+        bullet.GetComponent<Rigidbody2D>().AddForce(weaponTip.right * shootForce, ForceMode2D.Impulse);
         actualAmmo--;
         lastTimeShoot = Time.time;
         Destroy(bullet,bulletLifeTime);

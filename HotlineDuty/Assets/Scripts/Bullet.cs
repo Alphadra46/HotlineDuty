@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -19,6 +20,12 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+                
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            other.gameObject.GetComponent<Enemy_AI>().Death();
+        }
     }
     
     private void OnCollisionEnter2D(Collision2D collision)
@@ -34,6 +41,11 @@ public class Bullet : MonoBehaviour
         if (!other.gameObject.CompareTag("Weapon") && !other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
+        }
+        
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            other.gameObject.GetComponent<Enemy_AI>().Death();
         }
     }
     

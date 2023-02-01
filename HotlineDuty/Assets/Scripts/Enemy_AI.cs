@@ -57,7 +57,7 @@ public class Enemy_AI : MonoBehaviour
         playerStats.life -= AttackDamage;
     }
 
-    private void Death()
+    public void Death()
     {
         
     }
