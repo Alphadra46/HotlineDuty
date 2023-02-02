@@ -10,11 +10,20 @@ public class PlayerStats : MonoBehaviour
     public Sprite actualWeapon;
     public Sprite playerSpriteWithGun;
     public Sprite playerSpriteWithoutGun;
+    public int score;
+    public float AttackDamage;
+
+    public float AttackStart = 0f;
+
+    public float AttackCooldown = 1.25f;
+
+    public bool isDead;
     
     
 
     private void Update()
     {
+        
         if (GetComponent<Shoot>().isAWeaponEquipped)
         {
             GetComponent<SpriteRenderer>().sprite = playerSpriteWithGun;
@@ -35,7 +44,21 @@ public class PlayerStats : MonoBehaviour
         
         if (life <= 0)
         {
+            isDead = true;
             Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("Enemy"))
+        {
+            if (Time.time >= AttackStart + AttackCooldown)
+            {
+                AttackStart = Time.time;
+                life--;
+
+            }
         }
     }
 }

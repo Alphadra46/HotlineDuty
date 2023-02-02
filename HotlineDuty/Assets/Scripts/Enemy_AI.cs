@@ -16,23 +16,21 @@ public class Enemy_AI : MonoBehaviour
     public float AttackCooldown = 1.25f;
     
     public PlayerStats playerStats;
+
     
     void Start()
     {
-        var Player = GameObject.Find("Player");
+        var Player = GameObject.FindWithTag("Player");
         var SelfAi = gameObject.GetComponentInParent<AIDestinationSetter>();
         SelfAi.target = Player.transform;
-    }
-
-    
-    void Update()
-    {
         
     }
 
+
+
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player is in range");
         }
@@ -40,7 +38,7 @@ public class Enemy_AI : MonoBehaviour
     
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player is out of range");
             if (Time.time >= AttackStart + AttackCooldown)
@@ -58,12 +56,5 @@ public class Enemy_AI : MonoBehaviour
         playerStats.life -= AttackDamage;
     }
 
-    public void Death()
-    {
-        var luck = Random.Range(0, 100);
-        if (luck <= 50)
-        {
-            Instantiate(Resources.Load("AmmoBox"), transform.position, Quaternion.identity);
-        }
-    }
+
 }

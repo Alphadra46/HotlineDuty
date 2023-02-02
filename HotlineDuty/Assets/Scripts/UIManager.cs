@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     //UI VARIABLES
     [SerializeField] private TextMeshProUGUI ammoText;
     [SerializeField] private TextMeshProUGUI lifeText;
+    [SerializeField] private TextMeshProUGUI scoreText;
     
     //OBJECTS VARIABLES
     private AmmoManager ammoManager;
@@ -17,7 +18,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
+        playerStats = GameObject.FindWithTag("Player").GetComponent<PlayerStats>();
     }
 
     // Update is called once per frame
@@ -34,6 +35,7 @@ public class UIManager : MonoBehaviour
             ammoText.text = "0";
         }
         lifeText.SetText(playerStats.life.ToString());
+        scoreText.SetText(playerStats.score.ToString());
         
     }
 }

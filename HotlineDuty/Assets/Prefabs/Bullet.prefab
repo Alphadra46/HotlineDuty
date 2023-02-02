@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b962189d7f5e74348a5539308d6d4f92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -146,3 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae72d1052b44c142a881c0d04eab4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammoBox: {fileID: 3440443991194473015, guid: 4e4929f4460f32543b94fda905228500, type: 3}
+  playerStats: {fileID: 0}
