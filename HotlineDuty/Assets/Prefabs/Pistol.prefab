@@ -130,6 +130,7 @@ MonoBehaviour:
   isAutomatic: 1
   damagePerBullet: 5
   bulletLifeTime: 2
-  bulletPrefab: {fileID: 2600427693297900544, guid: b1da7258d6ad23c4aae4c47b99744691,
+  bulletPrefab: {fileID: 6761173912161444675, guid: c3081945366192f478e79c483d468986,
     type: 3}
   shootForce: 20
+  reloadSound: {fileID: 0}

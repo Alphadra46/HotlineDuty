@@ -5,6 +5,7 @@ using Pathfinding;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Animations;
+using Random = UnityEngine.Random;
 
 public class Enemy_AI : MonoBehaviour
 {
@@ -59,6 +60,10 @@ public class Enemy_AI : MonoBehaviour
 
     public void Death()
     {
-        
+        var luck = Random.Range(0, 100);
+        if (luck <= 50)
+        {
+            Instantiate(Resources.Load("AmmoBox"), transform.position, Quaternion.identity);
+        }
     }
 }

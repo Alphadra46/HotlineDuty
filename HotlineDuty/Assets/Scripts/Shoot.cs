@@ -11,6 +11,7 @@ public class Shoot : MonoBehaviour
     [SerializeField] private float shootForce = 2f;
 
     [HideInInspector] public bool isAWeaponEquipped = false;
+    
 
     private AmmoManager weaponAmmoManager;
     private Transform weaponTip;//The very tip of the weapon, where the bullet will be shoot and instantiate
@@ -32,7 +33,7 @@ public class Shoot : MonoBehaviour
             return;
         
         weaponAmmoManager = GetComponent<PickUpScript>().weaponToInteract.GetComponent<AmmoManager>();
-
+        
         weaponAmmoManager.Shoot();
     }
 }

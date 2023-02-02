@@ -17,6 +17,9 @@ public class AmmoManager : MonoBehaviour
     private float lastTimeShoot;
     private Transform weaponTip;
     private Shoot shootScript;
+    
+    [SerializeField] AudioSource reloadSound;
+    [SerializeField] AudioSource shootSound;
 
     private void Start()
     {
@@ -30,6 +33,14 @@ public class AmmoManager : MonoBehaviour
         {
             Shoot();
         }
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            
+            Reload();
+        }
+        
+        
     }
 
     public void Shoot()
@@ -45,9 +56,28 @@ public class AmmoManager : MonoBehaviour
         
         GameObject bullet = Instantiate(bulletPrefab, weaponTip.position,weaponTip.rotation);
         bullet.GetComponent<Rigidbody2D>().AddForce(weaponTip.right * shootForce, ForceMode2D.Impulse);
+        shootSound.Play();
         actualAmmo--;
         lastTimeShoot = Time.time;
         Destroy(bullet,bulletLifeTime);
 
+    }
+    
+    public void Reload()
+    {
+        if (maxAmmo >= 15 && actualAmmo != 15)
+        {
+            reloadSound.Play();
+            var ammoToReload = 15 - actualAmmo;
+            actualAmmo += ammoToReload;
+            maxAmmo -= ammoToReload;
+        }
+        else
+            return;
+    }
+    
+    public void AddAmmo(int ammoToAdd)
+    {
+        maxAmmo += ammoToAdd;
     }
 }
