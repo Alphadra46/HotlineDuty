@@ -77,7 +77,7 @@ public class Bullet : MonoBehaviour
     private void EnemyDrop()
     {
         var luck = Random.Range(0, 100);
-        if (luck <= 50)
+        if (luck <= 15)
         {
             Instantiate(ammoBox, transform.position, Quaternion.identity);
             playerStats.score += 100;

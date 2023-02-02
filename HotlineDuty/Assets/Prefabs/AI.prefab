@@ -80,7 +80,7 @@ MonoBehaviour:
   radius: 0.5
   height: 0.01
   canMove: 1
-  maxSpeed: 1
+  maxSpeed: 3
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -136,8 +136,6 @@ MonoBehaviour:
   AttackStart: 0
   AttackCooldown: 2.5
   playerStats: {fileID: 0}
-  ammoBox: {fileID: 3440443991194473015, guid: 4e4929f4460f32543b94fda905228500, type: 3}
-  parent: {fileID: 9110545983089652893}
 --- !u!1 &9110545983815460175
 GameObject:
   m_ObjectHideFlags: 0
