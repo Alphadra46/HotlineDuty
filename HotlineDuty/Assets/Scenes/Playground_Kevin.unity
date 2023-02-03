@@ -296,6 +296,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1740826260, guid: 30ab81685dc62ff4384f9d4486bb643e, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740826261, guid: 30ab81685dc62ff4384f9d4486bb643e, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3789883300828410881, guid: 30ab81685dc62ff4384f9d4486bb643e,
         type: 3}
       propertyPath: m_RootOrder
@@ -1479,6 +1487,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2600427693297900544, guid: b1da7258d6ad23c4aae4c47b99744691,
     type: 3}
   shootForce: 20
+  reloadSound: {fileID: 0}
+  shootSound: {fileID: 0}
 --- !u!1 &2013793646
 GameObject:
   m_ObjectHideFlags: 0

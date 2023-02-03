@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private GameObject ammoBox;
     [SerializeField] private PlayerStats playerStats;
+    [SerializeField] private GameObject blood;
 
     private void Start()
     {
@@ -77,10 +78,11 @@ public class Bullet : MonoBehaviour
     private void EnemyDrop()
     {
         var luck = Random.Range(0, 100);
-        if (luck <= 50)
+        if (luck <= 30)
         {
             Instantiate(ammoBox, transform.position, Quaternion.identity);
             playerStats.score += 100;
+            
             
             Destroy(gameObject);
             
@@ -88,9 +90,11 @@ public class Bullet : MonoBehaviour
         else
         {
             playerStats.score += 100;
+            Instantiate(blood, transform.position, Quaternion.identity);
             Destroy(gameObject);
             
         }
+        
     }
     
 }

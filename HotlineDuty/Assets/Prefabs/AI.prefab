@@ -136,8 +136,6 @@ MonoBehaviour:
   AttackStart: 0
   AttackCooldown: 2.5
   playerStats: {fileID: 0}
-  ammoBox: {fileID: 3440443991194473015, guid: 4e4929f4460f32543b94fda905228500, type: 3}
-  parent: {fileID: 9110545983089652893}
 --- !u!1 &9110545983815460175
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,7 +211,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: -2146876909, guid: b9de4784cae5adc4e9fb8ba9eb6584e4, type: 3}
   m_Color: {r: 0.5760428, g: 0.9528302, b: 0.51686543, a: 1}
   m_FlipX: 0

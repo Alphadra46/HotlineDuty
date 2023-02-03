@@ -54,7 +54,9 @@ public class AmmoManager : MonoBehaviour
                 return;
         }
         
-        GameObject bullet = Instantiate(bulletPrefab, weaponTip.position,weaponTip.rotation);
+        CameraShake.instance.ShakeCamera(0.1f,3f);
+        GameObject bullet = Instantiate(bulletPrefab, weaponTip.position,shootScript.transform.rotation);
+        bullet.transform.Rotate(0,0,-90);
         bullet.GetComponent<Rigidbody2D>().AddForce(weaponTip.right * shootForce, ForceMode2D.Impulse);
         shootSound.Play();
         actualAmmo--;

@@ -148,3 +148,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammoBox: {fileID: 3440443991194473015, guid: 4e4929f4460f32543b94fda905228500, type: 3}
   playerStats: {fileID: 0}
+  blood: {fileID: 6216715157182107016, guid: 11c6070872e381d4a8fea0f3d19e58b1, type: 3}
