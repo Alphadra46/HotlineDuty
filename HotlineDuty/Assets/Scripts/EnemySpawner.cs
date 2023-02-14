@@ -20,7 +20,8 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
-        if (currentEnemies < maxEnemies)
+        Debug.Log(currentEnemies);
+        /*if (currentEnemies < maxEnemies)
         {
             spawnTimer += Time.deltaTime;
             if (spawnTimer >= spawnDelay)
@@ -28,6 +29,12 @@ public class EnemySpawner : MonoBehaviour
                 spawnTimer = 0f;
                 SpawnEnemy();
             }
+        }*/ 
+        spawnTimer += Time.deltaTime;
+        if (spawnTimer >= spawnDelay)
+        {
+            spawnTimer = 0f;
+            SpawnEnemy();
         }
     }
     
